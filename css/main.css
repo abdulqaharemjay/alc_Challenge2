@@ -39,13 +39,16 @@ body {
     background: #13965d;
     border-radius: 30px;
     display: inline-block;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, .23);
+    -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, .23);
+            box-shadow: 0 15px 15px rgba(0, 0, 0, .23);
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 .about:hover {
     background: #19b16f;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
 }
 
 .val-prop span {
@@ -118,7 +121,9 @@ form input:focus {
 }
 
 .main-drop {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background: #323233;
     padding: 10px;
     color: #13965d;
@@ -127,7 +132,8 @@ form input:focus {
 .dropdown {
     width: 18px;
     display: inline-block;
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 
 .dropdown-options {
@@ -141,11 +147,15 @@ form input:focus {
     margin-left: 0;
     height: 160px;
     overflow-y: scroll;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -161,6 +171,7 @@ form input:focus {
     display: inline-block;
     color: #19B16F;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     padding: 10px;
     margin: 0;
@@ -187,7 +198,8 @@ form input:focus {
 .convert-direction {
     width: 18px;
     margin: 3vh 0;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
 }
 
 #converter-container {
@@ -217,7 +229,8 @@ form input:focus {
 .error-msg {
     display: none;
     position: absolute;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     top: 50%;
     right: 10px;
     width: 180px;
@@ -225,6 +238,7 @@ form input:focus {
     background: tomato;
     border-radius: 2px;
     color: #fff;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
@@ -240,6 +254,7 @@ form input:focus {
 
 ::-webkit-scrollbar {
     width: 15px;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
@@ -257,6 +272,7 @@ form input:focus {
 ::-webkit-scrollbar-thumb {
     background: rgb(23, 167, 105);
     width: 10px;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
@@ -305,12 +321,15 @@ form input:focus {
         background: #13965d;
         border-radius: 30px;
         display: inline-block;
-        box-shadow: 0 15px 15px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, .23);
+                box-shadow: 0 15px 15px rgba(0, 0, 0, .23);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .about:hover {
         background: #19b16f;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+                box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
     }
     .val-prop span {
         font-size: 52px;
@@ -371,7 +390,9 @@ form input:focus {
         position: relative;
     }
     .main-drop {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background: #323233;
         padding: 10px;
         color: #13965d;
@@ -379,7 +400,8 @@ form input:focus {
     .dropdown {
         width: 18px;
         display: inline-block;
-        align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     }
     .dropdown-options {
         display: none;
@@ -392,10 +414,14 @@ form input:focus {
         margin-left: 0;
         height: 160px;
         overflow-y: scroll;
-        box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+                box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .currency {
@@ -417,6 +443,7 @@ form input:focus {
         display: inline-block;
         color: #19B16F;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         padding: 10px;
         margin: 0;
@@ -438,7 +465,8 @@ form input:focus {
     .convert-direction {
         width: 18px;
         margin: 3vh 0;
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
     #converter-container {
         width: 300px;
@@ -465,7 +493,8 @@ form input:focus {
     .error-msg {
         display: none;
         position: absolute;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
         top: 50%;
         right: 10px;
         width: 180px;
@@ -473,6 +502,7 @@ form input:focus {
         background: tomato;
         border-radius: 2px;
         color: #fff;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .display-err {
@@ -484,6 +514,7 @@ form input:focus {
     /* width */
     ::-webkit-scrollbar {
         width: 15px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Track */
@@ -497,6 +528,7 @@ form input:focus {
     ::-webkit-scrollbar-thumb {
         background: rgb(23, 167, 105);
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Handle on hover */
@@ -541,12 +573,15 @@ form input:focus {
         background: #13965d;
         border-radius: 30px;
         display: inline-block;
-        box-shadow: 0 15px 15px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, .23);
+                box-shadow: 0 15px 15px rgba(0, 0, 0, .23);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .about:hover {
         background: #19b16f;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+                box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
     }
     .val-prop span {
         font-size: 48px;
@@ -607,7 +642,9 @@ form input:focus {
         position: relative;
     }
     .main-drop {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background: #323233;
         padding: 10px;
         color: #13965d;
@@ -615,7 +652,8 @@ form input:focus {
     .dropdown {
         width: 18px;
         display: inline-block;
-        align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     }
     .dropdown-options {
         display: none;
@@ -628,10 +666,14 @@ form input:focus {
         margin-left: 0;
         height: 160px;
         overflow-y: scroll;
-        box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+                box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .currency {
@@ -653,6 +695,7 @@ form input:focus {
         display: inline-block;
         color: #19B16F;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         padding: 10px;
         margin: 0;
@@ -674,7 +717,8 @@ form input:focus {
     .convert-direction {
         width: 18px;
         margin: 3vh 0;
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
     #converter-container {
         width: 300px;
@@ -701,7 +745,8 @@ form input:focus {
     .error-msg {
         display: none;
         position: absolute;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
         top: 50%;
         right: 10px;
         width: 180px;
@@ -709,6 +754,7 @@ form input:focus {
         background: tomato;
         border-radius: 2px;
         color: #fff;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .display-err {
@@ -720,6 +766,7 @@ form input:focus {
     /* width */
     ::-webkit-scrollbar {
         width: 15px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Track */
@@ -733,6 +780,7 @@ form input:focus {
     ::-webkit-scrollbar-thumb {
         background: rgb(23, 167, 105);
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Handle on hover */
@@ -777,12 +825,15 @@ form input:focus {
         background: #13965d;
         border-radius: 30px;
         display: inline-block;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .about:hover {
         background: #19b16f;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+                box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
     }
 
     .val-prop span {
@@ -841,7 +892,9 @@ form input:focus {
         width: 250px;
     }
     .main-drop {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background: #323233;
         padding: 10px;
         color: #13965d;
@@ -850,7 +903,8 @@ form input:focus {
     .dropdown {
         width: 14px;
         display: inline-block;
-        align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     }
     .dropdown-options {
         display: none;
@@ -863,10 +917,14 @@ form input:focus {
         margin-left: 0;
         height: 160px;
         overflow-y: scroll;
-        box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+                box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .currency {
@@ -880,6 +938,7 @@ form input:focus {
         display: inline-block;
         color: #19B16F;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         padding: 10px;
         margin: 0;
@@ -904,7 +963,8 @@ form input:focus {
     .convert-direction {
         width: 14px;
         margin: 20px 0;
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
     #converter-container {
         width: 200px;
@@ -931,7 +991,8 @@ form input:focus {
     .error-msg {
         display: none;
         position: absolute;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
         top: 50%;
         right: 10px;
         width: 180px;
@@ -939,6 +1000,7 @@ form input:focus {
         background: tomato;
         border-radius: 2px;
         color: #fff;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .display-err {
@@ -950,6 +1012,7 @@ form input:focus {
     /* width */
     ::-webkit-scrollbar {
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Track */
@@ -963,6 +1026,7 @@ form input:focus {
     ::-webkit-scrollbar-thumb {
         background: rgb(23, 167, 105);
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Handle on hover */
@@ -1008,17 +1072,25 @@ form input:focus {
         background: #13965d;
         border-radius: 20px;
         display: inline-block;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
         line-height: 25px;
     }
     .about:hover {
         background: #19b16f;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+                box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
     }
     .md {
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .col-6 {
         width: 100%;
@@ -1026,7 +1098,9 @@ form input:focus {
         margin-right: 0;
     }
     .prop {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-right: 0;
         width: 100%;
     }
@@ -1043,7 +1117,9 @@ form input:focus {
         color: #13965d;
         margin-left: 5px;
         margin: 0 auto;
-       align-items: center;
+       -webkit-box-align: center;
+           -ms-flex-align: center;
+               align-items: center;
     }
     
     .val-prop-exp {
@@ -1100,7 +1176,9 @@ form input:focus {
         width: 100%;
     }
     .main-drop {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background: #323233;
         padding: 10px;
         color: #13965d;
@@ -1109,7 +1187,8 @@ form input:focus {
     .dropdown {
         width: 14px;
         display: inline-block;
-        align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     }
     .dropdown-options {
         display: none;
@@ -1122,10 +1201,14 @@ form input:focus {
         margin-left: 0;
         height: 160px;
         overflow-y: scroll;
-        box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+                box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .currency {
@@ -1139,6 +1222,7 @@ form input:focus {
         display: inline-block;
         color: #19B16F;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         padding: 10px;
         margin: 0;
@@ -1161,7 +1245,8 @@ form input:focus {
     .convert-direction {
         width: 14px;
         margin: 20px 0;
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
     #converter-container {
         width: 80%;
@@ -1188,7 +1273,8 @@ form input:focus {
     .error-msg {
         display: none;
         position: absolute;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
         top: 50%;
         right: 10px;
         width: 180px;
@@ -1196,6 +1282,7 @@ form input:focus {
         background: tomato;
         border-radius: 2px;
         color: #fff;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .display-err {
@@ -1207,6 +1294,7 @@ form input:focus {
     /* width */
     ::-webkit-scrollbar {
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Track */
@@ -1220,6 +1308,7 @@ form input:focus {
     ::-webkit-scrollbar-thumb {
         background: rgb(23, 167, 105);
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Handle on hover */
@@ -1265,26 +1354,37 @@ form input:focus {
         background: #13965d;
         border-radius: 20px;
         display: inline-block;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
         line-height: 25px;
     }
     .about:hover {
         background: #19b16f;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+                box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
     }
     .md {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .col-6 {
         width: 100%;
         margin-right: 0;
     }
     .prop {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .val-prop {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
     .val-prop span {
         font-size: 16px;
@@ -1294,7 +1394,9 @@ form input:focus {
         color: #13965d;
         margin-left: 5px;
         margin: 0 auto;
-       align-items: center;
+       -webkit-box-align: center;
+           -ms-flex-align: center;
+               align-items: center;
     }
     
     .val-prop-exp {
@@ -1307,7 +1409,8 @@ form input:focus {
         position: absolute;
         width: 200px;
         bottom: 5px;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
         left: 70%;
     }
     .share h5 {
@@ -1350,7 +1453,9 @@ form input:focus {
         width: 100%;
     }
     .main-drop {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background: #323233;
         padding: 10px;
         color: #13965d;
@@ -1359,7 +1464,8 @@ form input:focus {
     .dropdown {
         width: 14px;
         display: inline-block;
-        align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     }
     .dropdown-options {
         display: none;
@@ -1372,10 +1478,14 @@ form input:focus {
         margin-left: 0;
         height: 160px;
         overflow-y: scroll;
-        box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+                box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .currency {
@@ -1389,6 +1499,7 @@ form input:focus {
         display: inline-block;
         color: #19B16F;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         padding: 10px;
         margin: 0;
@@ -1411,7 +1522,8 @@ form input:focus {
     .convert-direction {
         width: 14px;
         margin: 20px 0;
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
     #converter-container {
         width: 80%;
@@ -1438,7 +1550,8 @@ form input:focus {
     .error-msg {
         display: none;
         position: absolute;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
         top: 50%;
         right: 10px;
         width: 180px;
@@ -1446,6 +1559,7 @@ form input:focus {
         background: tomato;
         border-radius: 2px;
         color: #fff;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .display-err {
@@ -1457,6 +1571,7 @@ form input:focus {
     /* width */
     ::-webkit-scrollbar {
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Track */
@@ -1470,6 +1585,7 @@ form input:focus {
     ::-webkit-scrollbar-thumb {
         background: rgb(23, 167, 105);
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Handle on hover */
@@ -1515,16 +1631,22 @@ form input:focus {
         background: #13965d;
         border-radius: 20px;
         display: inline-block;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, .23);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
         line-height: 25px;
     }
     .about:hover {
         background: #19b16f;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+        -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
+                box-shadow: 0 5px 5px rgba(0, 0, 0, .23);
     }
     .md {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
     }
     .col-6 {
@@ -1533,10 +1655,15 @@ form input:focus {
         margin-right: 0;
     }
     .prop {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .val-prop {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         padding-left: 15px;
     }
     .val-prop h1 {
@@ -1547,7 +1674,9 @@ form input:focus {
         color: #13965d;
         margin-left: 5px;
         margin: 0 auto;
-       align-items: center;
+       -webkit-box-align: center;
+           -ms-flex-align: center;
+               align-items: center;
     }
     
     .val-prop-exp {
@@ -1602,7 +1731,9 @@ form input:focus {
         width: 100%;
     }
     .main-drop {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background: #323233;
         padding: 10px;
         color: #13965d;
@@ -1611,7 +1742,8 @@ form input:focus {
     .dropdown {
         width: 14px;
         display: inline-block;
-        align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     }
     .dropdown-options {
         display: none;
@@ -1624,10 +1756,14 @@ form input:focus {
         margin-left: 0;
         height: 160px;
         overflow-y: scroll;
-        box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+                box-shadow: 0 15px 20px rgba(0, 0, 0, .4);
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .currency {
@@ -1641,6 +1777,7 @@ form input:focus {
         display: inline-block;
         color: #19B16F;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         padding: 10px;
         margin: 0;
@@ -1663,7 +1800,8 @@ form input:focus {
     .convert-direction {
         width: 14px;
         margin: 20px 0;
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
     #converter-container {
         width: 80%;
@@ -1690,7 +1828,8 @@ form input:focus {
     .error-msg {
         display: none;
         position: absolute;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
         top: 50%;
         right: 10px;
         width: 180px;
@@ -1699,6 +1838,7 @@ form input:focus {
         border-radius: 2px;
         color: #fff;
         font-size: 12px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     .display-err {
@@ -1710,6 +1850,7 @@ form input:focus {
     /* width */
     ::-webkit-scrollbar {
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Track */
@@ -1723,6 +1864,7 @@ form input:focus {
     ::-webkit-scrollbar-thumb {
         background: rgb(23, 167, 105);
         width: 10px;
+        -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
     /* Handle on hover */

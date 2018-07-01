@@ -16,14 +16,11 @@ self.addEventListener('fetch', event => {
     
     fetch(event.request).then( response => {
 
-        if (response.status === 404) {
-            return fetch('/asset/err.png.png');
-        }
-        return response;
+       
     }).catch( () => {
 
-        return new Response('you are totally off the internet');
-    })
+        
+    });
     
 
 });
